@@ -124,7 +124,7 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 			endDate,
 		}: {
 			payload: { [key: string]: number | string };
-			facility: number;
+			facility: Facility;
 			startDate: string;
 			endDate: string;
 		}) {
@@ -159,31 +159,31 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 				);
 				if (results.length > 0) {
 					const [{ id }] = results;
-
 					const finalPayload = {
 						user: id,
 						schema: 96,
 						data: payload,
 						timelevel: 3,
-						location: Number(facility),
+						location: Number(facility["iRHIS ID"]),
 						date_start: startDate,
 						date_end: endDate,
 					};
 
 					if (access) {
-						const { data } = await instance.post("reports/form_data/", finalPayload, {
+						await instance.post("reports/form_data/", finalPayload, {
 							headers: {
 								Authorization: `Bearer ${access}`,
 								"Content-Type": "application/json",
 							},
 						});
-						return data;
+						return { ...facility, status: 200, date: dayjs().toISOString() };
 					}
 				}
 			} catch (error) {
-				this.logger.error(error.message);
+				this.logger.error(error.response.status);
+				return { ...facility, status: error.response.status, date: dayjs().toISOString() };
 			}
-			return undefined;
+			return { ...facility, date: dayjs().toISOString() };
 		},
 	},
 
@@ -196,7 +196,7 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 	 * Service started lifecycle event handler
 	 */
 	async started(this: SchedulerThis) {
-		scheduleJob("cases", "*/5 * * * * *", async () => {
+		scheduleJob("cases", "*/15 * * * *", async () => {
 			const api = this.createAPI();
 			let previous: object[] = [];
 			try {
@@ -235,7 +235,7 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 						const endDate = dayjs().startOf("month").endOf("week").format("YYYY-MM-DD");
 						const response = await this.postToIRHIS({
 							payload,
-							facility: Number(facility["iRHIS ID"]),
+							facility,
 							startDate,
 							endDate,
 						});

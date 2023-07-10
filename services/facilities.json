@@ -1,9 +1,639 @@
 [
   {
+    "Settlement": "Adjumani",
+    "DHIS2 UID": "zX0wfeEc8th",
+    "HF": "Elegu HC II",
+    "iRHIS ID": "5025",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Adjumani",
+    "DHIS2 UID": "a8NfqlGUC18",
+    "HF": "Agojo HC II",
+    "iRHIS ID": "5026",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Adjumani",
+    "DHIS2 UID": "RHkry0Pxk7e",
+    "HF": "Nyumanji HC II",
+    "iRHIS ID": "5027",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Adjumani",
+    "DHIS2 UID": "O4KQDQzBA9s",
+    "HF": "Elema HC III",
+    "iRHIS ID": "5028",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Adjumani",
+    "DHIS2 UID": "ngXa86YfOBc",
+    "HF": "Pagirinya HC II",
+    "iRHIS ID": "5029",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Adjumani",
+    "DHIS2 UID": "UBVFS5BQ6Jx",
+    "HF": "Aliwara HC II",
+    "iRHIS ID": "5030",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Adjumani",
+    "DHIS2 UID": "a9ai8OVQ4ET",
+    "HF": "Mungula HC IV",
+    "iRHIS ID": "3899",
+    "Level": "HC IV"
+  },
+  {
+    "Settlement": "Adjumani",
+    "DHIS2 UID": "COA705FeCbj",
+    "HF": "Alere HC II",
+    "iRHIS ID": "3895",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Adjumani",
+    "DHIS2 UID": "atv0z4e9m8B",
+    "HF": "Bira HC II",
+    "iRHIS ID": "5031",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Adjumani",
+    "DHIS2 UID": "FMgSYqDsfT6",
+    "HF": "Lewa HC II",
+    "iRHIS ID": "5032",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Adjumani",
+    "DHIS2 UID": "DID38FOFn2W",
+    "HF": "Ayilo 1 HC II",
+    "iRHIS ID": "3893",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Adjumani",
+    "DHIS2 UID": "k2QmjF7hYgF",
+    "HF": "Ayilo 2 HC II",
+    "iRHIS ID": "3894",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Adjumani",
+    "DHIS2 UID": "zSzd5o81wtt",
+    "HF": "Maaji B HC II",
+    "iRHIS ID": "5023",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Adjumani",
+    "DHIS2 UID": "x1hIfQqbZdF",
+    "HF": "Ayiri HC III",
+    "iRHIS ID": "5033",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Adjumani",
+    "DHIS2 UID": "Mq6H4E2PlH7",
+    "HF": "Ukusijoni HC III",
+    "iRHIS ID": "5034",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Adjumani",
+    "DHIS2 UID": "Lq5bORbEZDi",
+    "HF": "Maaji A HC II",
+    "iRHIS ID": "3915",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Adjumani",
+    "DHIS2 UID": "ERjm7RCCUZG",
+    "HF": "Maaji C HC II",
+    "iRHIS ID": "5024",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Bidibidi",
+    "DHIS2 UID": "dHp8jtq8Q6v",
+    "HF": "Bidibidi HC III",
+    "iRHIS ID": "5035",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Bidibidi",
+    "DHIS2 UID": "i8bLQB8OE5I",
+    "HF": "Twajiji HC III",
+    "iRHIS ID": "5036",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Bidibidi",
+    "DHIS2 UID": "X9VdFPaGsLW",
+    "HF": "Iyete HC III",
+    "iRHIS ID": "5037",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Bidibidi",
+    "DHIS2 UID": "KOEmIGNgghC",
+    "HF": "Swinga HC III",
+    "iRHIS ID": "5038",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Bidibidi",
+    "DHIS2 UID": "Hudt7sgd2Gu",
+    "HF": "Koro HC III",
+    "iRHIS ID": "5039",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Bidibidi",
+    "DHIS2 UID": "Wg6ycEfsEjW",
+    "HF": "Yayari HC III",
+    "iRHIS ID": "5040",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Bidibidi",
+    "DHIS2 UID": "Vz3PDTnces1",
+    "HF": "Kombge HC III",
+    "iRHIS ID": "5041",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Bidibidi",
+    "DHIS2 UID": "oI0aTdidBhm",
+    "HF": "Jomorogo HC III",
+    "iRHIS ID": "5042",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Bidibidi",
+    "DHIS2 UID": "s4pFdzmNfgg",
+    "HF": "Luzira HC III",
+    "iRHIS ID": "5043",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Bidibidi",
+    "DHIS2 UID": "axmLtifg8dz",
+    "HF": "Yoyo HC III",
+    "iRHIS ID": "5044",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Bidibidi",
+    "DHIS2 UID": "uJsMZskR0yC",
+    "HF": "Bangatuti HC III",
+    "iRHIS ID": "5045",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Bidibidi",
+    "DHIS2 UID": "AvoeVkEx8BO",
+    "HF": "Bolomoni HC III",
+    "iRHIS ID": "5047",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Bidibidi",
+    "DHIS2 UID": "JbCOhUCNMdN",
+    "HF": "Igamara HC III",
+    "iRHIS ID": "5048",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Bidibidi",
+    "DHIS2 UID": "Ocd7H11HC0z",
+    "HF": "Yangani HC III",
+    "iRHIS ID": "5049",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Bidibidi",
+    "DHIS2 UID": "jPxLo6hF2rI",
+    "HF": "Okubani HC III",
+    "iRHIS ID": "5050",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Bidibidi",
+    "DHIS2 UID": "mXVB3V7ft4h",
+    "HF": "Ayivu HC III",
+    "iRHIS ID": "5051",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Imvepi",
+    "DHIS2 UID": "ipOBsWpJ0U7",
+    "HF": "Yinga HC III",
+    "iRHIS ID": "5052",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Imvepi",
+    "DHIS2 UID": "DDbLsI5S91i",
+    "HF": "Imvepi HC III",
+    "iRHIS ID": "4744",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Imvepi",
+    "DHIS2 UID": "ehmgxZaocae",
+    "HF": "Omugo HC IV",
+    "iRHIS ID": "5057",
+    "Level": "HC IV"
+  },
+  {
+    "Settlement": "Kiryandongo",
+    "DHIS2 UID": "eAuFbAc1MUZ",
+    "HF": "Panyandoli Hill HC II",
+    "iRHIS ID": "5060",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Kiryandongo",
+    "DHIS2 UID": "a3qKoIZXK3t",
+    "HF": "Panyandoli HC III",
+    "iRHIS ID": "5059",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Kiryandongo",
+    "DHIS2 UID": "rfk0AEPFYk5",
+    "HF": "Nyakadoti HC II",
+    "iRHIS ID": "5058",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Kyaka II",
+    "DHIS2 UID": "NmZiWvRQ5nG",
+    "HF": "Mukondo HC III",
+    "iRHIS ID": "1073",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Kyaka II",
+    "DHIS2 UID": "frm9FSY7Syf",
+    "HF": "Bujubuli HC III",
+    "iRHIS ID": "1074",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Kyaka II",
+    "DHIS2 UID": "qZYuB89C8qp",
+    "HF": "Bwiriza HC III",
+    "iRHIS ID": "4898",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Kyaka II",
+    "DHIS2 UID": "RNNwQjXa1A2",
+    "HF": "Itambiniga HC III",
+    "iRHIS ID": "4900",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Kyaka II",
+    "DHIS2 UID": "a2SrdhMZZWN",
+    "HF": "Bukere HC III",
+    "iRHIS ID": "4897",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Kyaka II",
+    "DHIS2 UID": "R0olQW0C8vl",
+    "HF": "Byabakora HC III",
+    "iRHIS ID": "4899",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Kyaka II",
+    "DHIS2 UID": "bOB2UqVzE5P",
+    "HF": "Kaborogota HC III",
+    "iRHIS ID": "4901",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Kyaka II",
+    "DHIS2 UID": "KIOpGSnTUHo",
+    "HF": "Kakoni HC III",
+    "iRHIS ID": "4902",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Kyangwali",
+    "DHIS2 UID": "rqXX3nVIgQd",
+    "HF": "Ngurwe HC II",
+    "iRHIS ID": "5061",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Kyangwali",
+    "DHIS2 UID": "gQKXvT7RNVU",
+    "HF": "Kyangwali HC IV",
+    "iRHIS ID": "5062",
+    "Level": "HC IV"
+  },
+  {
+    "Settlement": "Kyangwali",
+    "DHIS2 UID": "Y7XKVrGNA6d",
+    "HF": "Rwenyawawa HC III",
+    "iRHIS ID": "1072",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Kyangwali",
+    "DHIS2 UID": "qL3k0Mlcy4u",
+    "HF": "Malembo HC III",
+    "iRHIS ID": "5067",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Kyangwali",
+    "DHIS2 UID": "zbCIfsyXOEv",
+    "HF": "Maratatu B HC III",
+    "iRHIS ID": "5068",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Kyangwali",
+    "DHIS2 UID": "TROMT6DVKEl",
+    "HF": "Kasonga HC II",
+    "iRHIS ID": "5069",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Lobule",
+    "DHIS2 UID": "aileSfY6owN",
+    "HF": "Pijoke HC III",
+    "iRHIS ID": "5070",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Lobule",
+    "DHIS2 UID": "cacYqraIAeB",
+    "HF": "Lobule HC III",
+    "iRHIS ID": "5071",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Lobule",
+    "DHIS2 UID": "ATo2Nmy2Y1Y",
+    "HF": "Lurujo HC III",
+    "iRHIS ID": "5072",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Lobule",
+    "DHIS2 UID": "CyZwgWizfmy",
+    "HF": "Kuluba HC III",
+    "iRHIS ID": "4740",
+    "Level": "HC III"
+  },
+  {
     "Settlement": "Nakivale",
     "DHIS2 UID": "lvbkNrwAFmE",
     "HF": "Nakivale HC III",
     "iRHIS ID": "1080",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Nakivale",
+    "DHIS2 UID": "K295qd0SaGs",
+    "HF": "Rubondo HC II",
+    "iRHIS ID": "1079",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Nakivale",
+    "DHIS2 UID": "au6l6u0QySf",
+    "HF": "Juru HC II",
+    "iRHIS ID": "1081",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Nakivale",
+    "DHIS2 UID": "AZuJv7eQ9Pf",
+    "HF": "Ruhoko HC II",
+    "iRHIS ID": "4896",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Nakivale",
+    "DHIS2 UID": "oWA8scZHcEV",
+    "HF": "Kibengo HC II",
+    "iRHIS ID": "1083",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Nakivale",
+    "DHIS2 UID": "XWqf7PB1OaR",
+    "HF": "Rwekubo HC IV",
+    "iRHIS ID": "5073",
+    "Level": "HC IV"
+  },
+  {
+    "Settlement": "Oruchinga",
+    "DHIS2 UID": "RFWwEWMyoSD",
+    "HF": "Nshungezi HCII",
+    "iRHIS ID": "1077",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Palabek",
+    "DHIS2 UID": "uhK5lYkfbvk",
+    "HF": "Awich HC II",
+    "iRHIS ID": "5074",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Palabek",
+    "DHIS2 UID": "BqmsCq2bJXK",
+    "HF": "Paluda HC III",
+    "iRHIS ID": "5075",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Palabek",
+    "DHIS2 UID": "pkhPSHZSnr3",
+    "HF": "Akworo HC II",
+    "iRHIS ID": "5076",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Palorinya",
+    "DHIS2 UID": "FDGxZvsSQrY",
+    "HF": "KALI HC II",
+    "iRHIS ID": "5077",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Palorinya",
+    "DHIS2 UID": "r6rK4PRzzKv",
+    "HF": "BELAMELING HC II",
+    "iRHIS ID": "5078",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Palorinya",
+    "DHIS2 UID": "ZxrAPP6eP96",
+    "HF": "IBOWA HC II",
+    "iRHIS ID": "5079",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Palorinya",
+    "DHIS2 UID": "n1UMkPo5vzH",
+    "HF": "IBAKWE HC II",
+    "iRHIS ID": "5082",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Palorinya",
+    "DHIS2 UID": "aQnmwOGxGcK",
+    "HF": "PALORINYA HC III",
+    "iRHIS ID": "5080",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Palorinya",
+    "DHIS2 UID": "X5ebRy9YPbR",
+    "HF": "ITULA HC III",
+    "iRHIS ID": "5081",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Palorinya",
+    "DHIS2 UID": "b73ibKZriwG",
+    "HF": "BELLE HC III",
+    "iRHIS ID": "5084",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Palorinya",
+    "DHIS2 UID": "PPZBwMBfzri",
+    "HF": "IDIWA HC III",
+    "iRHIS ID": "5085",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Palorinya",
+    "DHIS2 UID": "bqKNwCoEgpx",
+    "HF": "LURU HC III",
+    "iRHIS ID": "5086",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Rhino",
+    "DHIS2 UID": "PJAn1P5SMrd",
+    "HF": "Ocea HC III",
+    "iRHIS ID": "4743",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Rhino",
+    "DHIS2 UID": "GydLR8lY7Qw",
+    "HF": "Odoubu HCII",
+    "iRHIS ID": "5087",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Rhino",
+    "DHIS2 UID": "IuVsQCPk19T",
+    "HF": "Olujobo HC III",
+    "iRHIS ID": "5088",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Rhino",
+    "DHIS2 UID": "tCyqZmtVPLI",
+    "HF": "Ofua HC III",
+    "iRHIS ID": "5089",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Rhino",
+    "DHIS2 UID": "F7LKQNLd8M6",
+    "HF": "Siripi HC III",
+    "iRHIS ID": "5090",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Rhino",
+    "DHIS2 UID": "ccY5TpGvBqo",
+    "HF": "Rhino Camp HC IV",
+    "iRHIS ID": "5091",
+    "Level": "HC IV"
+  },
+  {
+    "Settlement": "Rhino",
+    "DHIS2 UID": "UHpADuPw9qs",
+    "HF": "Ofua Zone 4&5&6 HC II",
+    "iRHIS ID": "5092",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Rhino",
+    "DHIS2 UID": "mpAh5EDvfVT",
+    "HF": "Omugo HC III",
+    "iRHIS ID": "4742",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Rhino",
+    "DHIS2 UID": "W4x9W2Teonj",
+    "HF": "OCIA HC III",
+    "iRHIS ID": "5094",
+    "Level": "HC III"
+  },
+  {
+    "Settlement": "Rwamwanja",
+    "DHIS2 UID": "IuEvYABA8eB",
+    "HF": "Kyempango HCII",
+    "iRHIS ID": "1084",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Rwamwanja",
+    "DHIS2 UID": "OA8BVTP9las",
+    "HF": "Mahega HC II",
+    "iRHIS ID": "4907",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Rwamwanja",
+    "DHIS2 UID": "JLLiG0uxMo2",
+    "HF": "Ntenungi HC II",
+    "iRHIS ID": "4905",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Rwamwanja",
+    "DHIS2 UID": "vzuVR6XQEFr",
+    "HF": "Kikurura HC II",
+    "iRHIS ID": "4906",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Rwamwanja",
+    "DHIS2 UID": "N0Qjh6Gg0iZ",
+    "HF": "Mahani HC II",
+    "iRHIS ID": "4908",
+    "Level": "HC II"
+  },
+  {
+    "Settlement": "Rwamwanja",
+    "DHIS2 UID": "CK8TCNDBPNc",
+    "HF": "Rwamwanja HC III",
+    "iRHIS ID": "1085",
     "Level": "HC III"
   }
 ]
