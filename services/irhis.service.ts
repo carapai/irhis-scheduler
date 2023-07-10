@@ -202,7 +202,6 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 			try {
 				const { data } = await api.get("dataStore/irhis/previous");
 				previous = data;
-				this.logger.info(data);
 			} catch (error) {
 				this.logger.error(error.message);
 			}
@@ -210,7 +209,7 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 				for (const facility of facilities) {
 					const {
 						data: { dataValues },
-					} = await this.fetchData(api, facility["DHIS2 UID"], "202305");
+					} = await this.fetchData(api, facility["DHIS2 UID"], dayjs().format("YYYYMM"));
 
 					if (dataValues) {
 						const allValues = fromPairs<string>(
@@ -239,15 +238,12 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 							startDate,
 							endDate,
 						});
-						this.logger.info(response);
-
 						if (response) {
 							previous = [...previous, { ...response }];
 						}
 					}
 				}
-				const { data } = await api.put("dataStore/irhis/previous", previous);
-				this.logger.info(data);
+				await api.put("dataStore/irhis/previous", previous);
 			} catch (error) {
 				this.logger.error(error);
 			}
