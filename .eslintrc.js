@@ -32,7 +32,6 @@ module.exports = {
 
 		// allow class methods which do not use this
 		"class-methods-use-this": "off",
-
 		// Allow use of ForOfStatement - no-restricted-syntax does not allow us to turn off a rule. This block overrides the airbnb rule entirely
 		// https://github.com/airbnb/javascript/blob/7152396219e290426a03e47837e53af6bcd36bbe/packages/eslint-config-airbnb-base/rules/style.js#L257-L263
 		"no-restricted-syntax": [
@@ -96,7 +95,7 @@ module.exports = {
 
 		// set up naming convention rules
 		"@typescript-eslint/naming-convention": [
-			"error",
+			"off",
 			// camelCase for everything not otherwise indicated
 			{ selector: "default", format: ["camelCase"] },
 			// allow known default exclusions
