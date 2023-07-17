@@ -34,7 +34,7 @@ interface SchedulerLocalVars {
 type SchedulerThis = Service<SchedulerSettings> & SchedulerMethods & SchedulerLocalVars;
 
 const SchedulerService: ServiceSchema<SchedulerSettings> = {
-	name: "greeter",
+	name: "ihris",
 
 	/**
 	 * Settings
@@ -113,7 +113,7 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 						}
 						return [key, val];
 					}
-					return [key, "0"];
+					return [key, 0];
 				}),
 			);
 		},
@@ -168,7 +168,6 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 						date_start: startDate,
 						date_end: endDate,
 					};
-
 					if (access) {
 						await instance.post("reports/form_data/", finalPayload, {
 							headers: {
@@ -178,9 +177,11 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 						});
 						return { ...facility, status: 200, date: dayjs().toISOString() };
 					}
+				} else {
+					return { ...facility, status: 403, date: dayjs().toISOString() };
 				}
 			} catch (error) {
-				this.logger.error(error.response.status);
+				this.logger.error(error.message);
 				return { ...facility, status: error.response.status, date: dayjs().toISOString() };
 			}
 			return { ...facility, date: dayjs().toISOString() };
@@ -196,7 +197,7 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 	 * Service started lifecycle event handler
 	 */
 	async started(this: SchedulerThis) {
-		scheduleJob("cases", "*/15 * * * *", async () => {
+		scheduleJob("cases", "*/30 * * * * *", async () => {
 			const api = this.createAPI();
 			let previous: object[] = [];
 			try {
@@ -205,47 +206,53 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 			} catch (error) {
 				this.logger.error(error.message);
 			}
-			try {
-				for (const facility of facilities) {
-					const {
-						data: { dataValues },
-					} = await this.fetchData(api, facility["DHIS2 UID"], dayjs().format("YYYYMM"));
 
-					if (dataValues) {
-						const allValues = fromPairs<string>(
-							dataValues.map(
-								({
-									dataElement,
-									categoryOptionCombo,
-									attributeOptionCombo,
-									value,
-								}: never) => [
-									`${dataElement}.${categoryOptionCombo}.${attributeOptionCombo}`,
-									value,
-								],
-							),
-						);
-						const payload = this.processData(allValues);
-						const startDate = dayjs()
-							.startOf("month")
-							.startOf("week")
-							.add(3, "hours")
-							.format("YYYY-MM-DD");
-						const endDate = dayjs().startOf("month").endOf("week").format("YYYY-MM-DD");
-						const response = await this.postToIRHIS({
-							payload,
-							facility,
-							startDate,
-							endDate,
-						});
-						if (response) {
-							previous = [...previous, { ...response }];
-						}
-					}
+			for (const facility of facilities) {
+				const {
+					data: { dataValues },
+				} = await this.fetchData(
+					api,
+					facility["DHIS2 UID"],
+					dayjs().subtract(1, "month").format("YYYYMM"),
+				);
+
+				if (dataValues) {
+					const allValues = fromPairs<string>(
+						dataValues.map(
+							({
+								dataElement,
+								categoryOptionCombo,
+								attributeOptionCombo,
+								value,
+							}: never) => [
+								`${dataElement}.${categoryOptionCombo}.${attributeOptionCombo}`,
+								value,
+							],
+						),
+					);
+					const payload = this.processData(allValues);
+					const startDate = dayjs()
+						.subtract(1, "month")
+						.startOf("month")
+						.startOf("week")
+						.add(3, "hours")
+						.format("YYYY-MM-DD");
+					const endDate = dayjs()
+						.subtract(1, "month")
+						.startOf("month")
+						.endOf("week")
+						.format("YYYY-MM-DD");
+
+					const response = await this.postToIRHIS({
+						payload,
+						facility,
+						startDate,
+						endDate,
+					});
+					this.logger.info(response);
+					previous = [...previous, response];
+					await api.put("dataStore/irhis/previous", previous);
 				}
-				await api.put("dataStore/irhis/previous", previous);
-			} catch (error) {
-				this.logger.error(error);
 			}
 		});
 	},
