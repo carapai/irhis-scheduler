@@ -227,7 +227,7 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 	 * Service started lifecycle event handler
 	 */
 	async started(this: SchedulerThis) {
-		scheduleJob("cases", "0 */6 * * *", async () => {
+		scheduleJob("cases", "0 0 * * *", async () => {
 			const api = this.createAPI();
 			let previous: object[] = [];
 			try {
