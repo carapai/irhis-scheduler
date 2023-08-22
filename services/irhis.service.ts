@@ -4,7 +4,7 @@
 import type { AxiosInstance } from "axios";
 import axios from "axios";
 import dayjs from "dayjs";
-import { fromPairs } from "lodash";
+import { fromPairs, groupBy, maxBy, minBy } from "lodash";
 import { evaluate } from "mathjs";
 import type { Service, ServiceSchema } from "moleculer";
 import { scheduleJob } from "node-schedule";
@@ -32,6 +32,36 @@ interface SchedulerLocalVars {
 }
 
 type SchedulerThis = Service<SchedulerSettings> & SchedulerMethods & SchedulerLocalVars;
+
+const getDatesBetween = (start: Date, end: Date) => {
+	const all: Date[] = [];
+	for (let dt = new Date(start); dt <= new Date(end); dt.setDate(dt.getDate() + 1)) {
+		all.push(new Date(dt));
+	}
+	return all;
+};
+const processDates = (arr: Date[]) => {
+	const all = arr.map((d) => {
+		const year = dayjs(d).year();
+		const month = dayjs(d).month();
+		const day = dayjs(d).day();
+		return { year, month, day, date: dayjs(d).format("YYYY-MM-DD") };
+	});
+	const minMonth = minBy(all, "month");
+	const maxMonth = maxBy(all, "month");
+	const groups = groupBy(all, "month");
+
+	if (groups[minMonth?.month || ""] <= groups[maxMonth?.month || ""]) {
+		return [minMonth?.date, maxMonth?.date];
+	}
+
+	return [
+		dayjs(arr[0]).add(7, "days").format("YYYY-MM-DD"),
+		dayjs(arr[arr.length - 1])
+			.add(7, "days")
+			.format("YYYY-MM-DD"),
+	];
+};
 
 const SchedulerService: ServiceSchema<SchedulerSettings> = {
 	name: "ihris",
@@ -235,19 +265,18 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 						.subtract(1, "month")
 						.startOf("month")
 						.startOf("week")
-						.add(3, "hours")
-						.format("YYYY-MM-DD");
-					const endDate = dayjs()
-						.subtract(1, "month")
-						.startOf("month")
-						.endOf("week")
-						.format("YYYY-MM-DD");
+						.add(3, "hours");
+					const endDate = dayjs().subtract(1, "month").startOf("month").endOf("week");
+
+					const [start, end] = processDates(
+						getDatesBetween(startDate.toDate(), endDate.toDate()),
+					);
 
 					const response = await this.postToIRHIS({
 						payload,
 						facility,
-						startDate,
-						endDate,
+						startDate: start,
+						endDate: end,
 					});
 					this.logger.info(response);
 					previous = [...previous, response];
