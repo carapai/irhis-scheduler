@@ -4,7 +4,7 @@
 import type { AxiosInstance } from "axios";
 import axios from "axios";
 import dayjs from "dayjs";
-import { fromPairs, groupBy, maxBy, minBy } from "lodash";
+import { fromPairs, groupBy, maxBy, minBy, sum } from "lodash";
 import { evaluate } from "mathjs";
 import type { Service, ServiceSchema } from "moleculer";
 import { scheduleJob } from "node-schedule";
@@ -41,18 +41,19 @@ const getDatesBetween = (start: Date, end: Date) => {
 	return all;
 };
 const processDates = (arr: Date[]) => {
-	const all = arr.map((d) => {
-		const year = dayjs(d).year();
-		const month = dayjs(d).month();
-		const day = dayjs(d).day();
-		return { year, month, day, date: dayjs(d).format("YYYY-MM-DD") };
-	});
-	const minMonth = minBy(all, "month");
-	const maxMonth = maxBy(all, "month");
-	const groups = groupBy(all, "month");
+	const all = arr.map((d) => ({ date: dayjs(d).format("YYYY-MM-DD") }));
+	const minMonth = minBy(all, (d) => d.date.slice(0, 7));
+	const maxMonth = maxBy(all, (d) => d.date.slice(0, 7));
+	const groups = groupBy(all, (d) => d.date.slice(0, 7));
 
-	if (groups[minMonth?.month || ""] <= groups[maxMonth?.month || ""]) {
-		return [minMonth?.date, maxMonth?.date];
+	if (
+		groups[String(minMonth?.date.slice(0, 7))]?.length <=
+		groups[String(maxMonth?.date.slice(0, 7))]?.length
+	) {
+		return [
+			dayjs(arr[0]).format("YYYY-MM-DD"),
+			dayjs(arr[arr.length - 1]).format("YYYY-MM-DD"),
+		];
 	}
 
 	return [
@@ -101,8 +102,29 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 				},
 			});
 		},
-		async fetchData(api: AxiosInstance, orgUnit: string, period: string) {
+		async fetchData(api: AxiosInstance, orgUnit: string, period: [string, string]) {
+			const previousPeriod = dayjs(period[0]).subtract(1, "months");
+			const prevStartDate = previousPeriod.startOf("month").format("YYYY-MM-DD");
+			const prevEndDate = previousPeriod.endOf("month").format("YYYY-MM-DD");
+			const prevParameters = new URLSearchParams();
+			prevParameters.append("orgUnit", orgUnit);
+			prevParameters.append("startDate", prevStartDate);
+			prevParameters.append("endDate", prevEndDate);
+			prevParameters.append(
+				"dataSet",
+				[
+					"RtEYsASU7PG",
+					"ic1BSWhGOso",
+					"nGkMm2VBT4G",
+					"VDhwrW9DiC1",
+					"quMWqLxzcfO",
+					"GyD9wEs2NYG",
+					"EBqVAQRmiPm",
+					"C4oUitImBPK",
+				].join(","),
+			);
 			const allParams = new URLSearchParams();
+
 			allParams.append("dataSet", "RtEYsASU7PG");
 			allParams.append("dataSet", "ic1BSWhGOso");
 			allParams.append("dataSet", "nGkMm2VBT4G");
@@ -111,39 +133,122 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 			allParams.append("dataSet", "GyD9wEs2NYG");
 			allParams.append("dataSet", "EBqVAQRmiPm");
 			allParams.append("orgUnit", orgUnit);
-			allParams.append("period", period);
+			allParams.append("startDate", period[0]);
+			allParams.append("endDate", period[1]);
 			const url = `dataValueSets.json?${allParams.toString()}`;
-			const data = await api.get(url);
-			return data;
+			const url2 = `dataValueSets.json?${prevParameters.toString()}`;
+			const [
+				{
+					data: { dataValues },
+				},
+				{
+					data: { dataValues: dataValues1 },
+				},
+			] = await Promise.all([api.get(url), api.get(url2)]);
+			return { allDataValues: dataValues || {}, allPrevDataValues: dataValues1 || {} };
 		},
-		processData(allValues: { [key: string]: string }) {
+		processData(
+			allValues: { [key: string]: string },
+			allValuesPrev: { [key: string]: string },
+			period: [string, string],
+		) {
 			return fromPairs(
 				mapping.map(({ key, value }) => {
+					let actualValue = String(value);
 					let attribute = "";
-					if (key.indexOf("_Ref") !== -1) {
+					if (
+						["OPD_TS_oar_nr_outbreaks_rep", "OPD_TS_oar_nr_rep_invest"].indexOf(
+							String(key),
+						) !== -1
+					) {
+						attribute = "HllvX50cXC0";
+					} else if (String(key).indexOf("_Ref") !== -1) {
 						attribute = "TFRceXDkJ95";
-					} else if (key.indexOf("_Nat")) {
+					} else if (String(key).indexOf("_Nat") !== -1) {
 						attribute = "Lf2Axb9E6B4";
 					}
 
-					if (value === "0") {
-						return [key, 0];
+					let workingWith = allValues;
+
+					if (key.indexOf("beginning_of_reporting_period") !== -1) {
+						workingWith = allValuesPrev;
 					}
-					if (value) {
-						const splitString = value.split(/\+|\-/);
+					if (value === "0" || value === 0) {
+						if (
+							[
+								"IPD_TS_Ind_ipd_reporting_period_days",
+								"OPD_TS_Ind_full_days_OPD_functioning",
+							].indexOf(key) !== -1
+						) {
+							return [
+								key,
+								{
+									value: dayjs(period[0]).daysInMonth(),
+									expression: "0",
+								},
+							];
+						}
+						return [key, { value: "0", expression: "0" }];
+					}
+					if (String(value) && attribute) {
+						let value2 = actualValue;
+						const splitString = String(value).split(/\+|\-/);
+						const splitString2 = String(value2).split(/\+|\-/);
+
 						splitString.forEach((val) => {
-							value = value.replace(val, allValues[`${val}.${attribute}`] || "0");
+							actualValue = actualValue.replace(
+								val,
+								workingWith[`${val}.${attribute}`] || "0",
+							);
+						});
+
+						splitString2.forEach((val) => {
+							value2 = value2.replace(
+								val,
+								`${workingWith[`${val}.${attribute}`] || "0"}`,
+							);
 						});
 						let val = 0;
 						try {
-							val = evaluate(value);
+							val = evaluate(actualValue);
 						} catch (error) {
 							this.logger.error(key, value);
 							this.logger.error(error);
 						}
-						return [key, val];
+						return [key, { value: val, expression: value2 }];
 					}
-					return [key, 0];
+					let national = String(value);
+					let refugee = String(value);
+
+					const natSplit = national.split(/\+|\-/);
+					const refSplit = refugee.split(/\+|\-/);
+
+					natSplit.forEach((val) => {
+						national = national.replace(val, workingWith[`${val}.Lf2Axb9E6B4`] || "0");
+					});
+
+					refSplit.forEach((val) => {
+						refugee = refugee.replace(val, workingWith[`${val}.TFRceXDkJ95`] || "0");
+					});
+
+					try {
+						const natValue = evaluate(national);
+						const refValue = evaluate(refugee);
+						return [
+							key,
+							{
+								value:
+									key === "IPD_TS_nr_beds"
+										? refValue
+										: String(Number(natValue) + Number(refValue)),
+								expression: "",
+							},
+						];
+					} catch (error) {
+						this.logger.error(key, value);
+						this.logger.error(error);
+					}
+					return [key, { value: "0", expression: "0" }];
 				}),
 			);
 		},
@@ -211,7 +316,6 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 					return { ...facility, status: 403, date: dayjs().toISOString() };
 				}
 			} catch (error) {
-				this.logger.error(error.message);
 				return { ...facility, status: error.response.status, date: dayjs().toISOString() };
 			}
 			return { ...facility, date: dayjs().toISOString() };
@@ -230,6 +334,11 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 		scheduleJob("cases", "0 0 * * *", async () => {
 			const api = this.createAPI();
 			let previous: object[] = [];
+			const prevMonth = dayjs().subtract(1, "month");
+			const period = [
+				prevMonth.startOf("month").format("YYYY-MM-DD"),
+				prevMonth.endOf("month").format("YYYY-MM-DD"),
+			];
 			try {
 				const { data } = await api.get("dataStore/irhis/previous");
 				previous = data;
@@ -238,50 +347,114 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 			}
 
 			for (const facility of facilities) {
-				const {
-					data: { dataValues },
-				} = await this.fetchData(
+				const { allDataValues, allPrevDataValues } = await this.fetchData(
 					api,
 					facility["DHIS2 UID"],
-					dayjs().subtract(1, "month").format("YYYYMM"),
+					period,
 				);
 
-				if (dataValues) {
-					const allValues = fromPairs<string>(
-						dataValues.map(
-							({
-								dataElement,
-								categoryOptionCombo,
-								attributeOptionCombo,
-								value,
-							}: never) => [
-								`${dataElement}.${categoryOptionCombo}.${attributeOptionCombo}`,
-								value,
-							],
+				let allValues: { [key: string]: string } = {};
+				let allValuesPrev: { [key: string]: string } = {};
+
+				if (allDataValues) {
+					const withWeeks = allDataValues.filter(
+						(d: { period: string }) => d.period.indexOf("W") !== -1,
+					);
+					const withoutWeeks = allDataValues.filter(
+						(d: { period: string }) => d.period.indexOf("W") === -1,
+					);
+
+					const processed = Object.entries(
+						groupBy(
+							withWeeks,
+							(v) =>
+								`${v.attributeOptionCombo}${v.categoryOptionCombo}${v.dataElement}${v.orgUnit}`,
 						),
-					);
-					const payload = this.processData(allValues);
-					const startDate = dayjs()
-						.subtract(1, "month")
-						.startOf("month")
-						.startOf("week")
-						.add(3, "hours");
-					const endDate = dayjs().subtract(1, "month").startOf("month").endOf("week");
+					).map(([, values]) => ({
+						...values[0],
+						value: String(sum(values.map((d: { value: string }) => Number(d.value)))),
+					}));
 
-					const [start, end] = processDates(
-						getDatesBetween(startDate.toDate(), endDate.toDate()),
+					allValues = fromPairs<string>(
+						withoutWeeks
+							.concat(processed)
+							.map(
+								({
+									dataElement,
+									categoryOptionCombo,
+									attributeOptionCombo,
+									value,
+								}: {
+									dataElement: string;
+									categoryOptionCombo: string;
+									attributeOptionCombo: string;
+									value: string;
+								}) => [
+									`${dataElement}.${categoryOptionCombo}.${attributeOptionCombo}`,
+									value,
+								],
+							),
 					);
-
-					const response = await this.postToIRHIS({
-						payload,
-						facility,
-						startDate: start,
-						endDate: end,
-					});
-					this.logger.info(response);
-					previous = [...previous, response];
-					await api.put("dataStore/irhis/previous", previous);
 				}
+
+				if (allPrevDataValues) {
+					const withWeeks = allPrevDataValues.filter(
+						(d: { period: string }) => d.period.indexOf("W") !== -1,
+					);
+					const withoutWeeks = allPrevDataValues.filter(
+						(d: { period: string }) => d.period.indexOf("W") === -1,
+					);
+
+					const processed = Object.entries(
+						groupBy(
+							withWeeks,
+							(v) =>
+								`${v.attributeOptionCombo}${v.categoryOptionCombo}${v.dataElement}${v.orgUnit}`,
+						),
+					).map(([, values]) => ({
+						...values[0],
+						value: String(sum(values.map((d: { value: string }) => Number(d.value)))),
+					}));
+
+					allValuesPrev = fromPairs<string>(
+						withoutWeeks
+							.concat(processed)
+							.map(
+								({
+									dataElement,
+									categoryOptionCombo,
+									attributeOptionCombo,
+									value,
+								}: {
+									dataElement: string;
+									categoryOptionCombo: string;
+									attributeOptionCombo: string;
+									value: string;
+								}) => [
+									`${dataElement}.${categoryOptionCombo}.${attributeOptionCombo}`,
+									value,
+								],
+							),
+					);
+				}
+
+				const payload = this.processData(allValues, allValuesPrev, period);
+				const startDate = dayjs(period[0]).startOf("week");
+				const endDate = dayjs(period[0]).endOf("week");
+
+				const [start, end] = processDates(
+					getDatesBetween(startDate.toDate(), endDate.toDate()),
+				);
+
+				const response = await this.postToIRHIS({
+					payload,
+					facility,
+					startDate: start,
+					endDate: end,
+				});
+				this.logger.info(response);
+				previous = [...previous, response];
+				await api.put("dataStore/irhis/previous", previous);
 			}
 		});
 	},
