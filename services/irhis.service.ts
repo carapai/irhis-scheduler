@@ -4,7 +4,11 @@
 import type { AxiosInstance } from "axios";
 import axios from "axios";
 import dayjs from "dayjs";
-import { fromPairs, groupBy, maxBy, minBy, sum } from "lodash";
+import isoWeek from "dayjs/plugin/isoWeek";
+import updateLocale from "dayjs/plugin/updateLocale";
+import utc from "dayjs/plugin/utc";
+import weekday from "dayjs/plugin/weekday";
+import { fromPairs, groupBy, isEmpty, maxBy, minBy } from "lodash";
 import { evaluate } from "mathjs";
 import type { Service, ServiceSchema } from "moleculer";
 import { scheduleJob } from "node-schedule";
@@ -32,6 +36,14 @@ interface SchedulerLocalVars {
 }
 
 type SchedulerThis = Service<SchedulerSettings> & SchedulerMethods & SchedulerLocalVars;
+
+dayjs.extend(weekday);
+dayjs.extend(isoWeek);
+dayjs.extend(updateLocale);
+dayjs.updateLocale("en", {
+	weekStart: 1,
+});
+dayjs.extend(utc);
 
 const getDatesBetween = (start: Date, end: Date) => {
 	const all: Date[] = [];
@@ -120,18 +132,22 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 					"quMWqLxzcfO",
 					"GyD9wEs2NYG",
 					"EBqVAQRmiPm",
-					"C4oUitImBPK",
 				].join(","),
 			);
 			const allParams = new URLSearchParams();
 
-			allParams.append("dataSet", "RtEYsASU7PG");
-			allParams.append("dataSet", "ic1BSWhGOso");
-			allParams.append("dataSet", "nGkMm2VBT4G");
-			allParams.append("dataSet", "VDhwrW9DiC1");
-			allParams.append("dataSet", "quMWqLxzcfO");
-			allParams.append("dataSet", "GyD9wEs2NYG");
-			allParams.append("dataSet", "EBqVAQRmiPm");
+			allParams.append(
+				"dataSet",
+				[
+					"RtEYsASU7PG",
+					"ic1BSWhGOso",
+					"nGkMm2VBT4G",
+					"VDhwrW9DiC1",
+					"quMWqLxzcfO",
+					"GyD9wEs2NYG",
+					"EBqVAQRmiPm",
+				].join(","),
+			);
 			allParams.append("orgUnit", orgUnit);
 			allParams.append("startDate", period[0]);
 			allParams.append("endDate", period[1]);
@@ -339,6 +355,12 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 				prevMonth.startOf("month").format("YYYY-MM-DD"),
 				prevMonth.endOf("month").format("YYYY-MM-DD"),
 			];
+			const startDate = dayjs(period[0]).startOf("week");
+			const endDate = dayjs(period[0]).endOf("week");
+
+			const [start, end] = processDates(
+				getDatesBetween(startDate.toDate(), endDate.toDate()),
+			);
 			try {
 				const { data } = await api.get("dataStore/irhis/previous");
 				previous = data;
@@ -355,104 +377,60 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 
 				let allValues: { [key: string]: string } = {};
 				let allValuesPrev: { [key: string]: string } = {};
-
-				if (allDataValues) {
-					const withWeeks = allDataValues.filter(
-						(d: { period: string }) => d.period.indexOf("W") !== -1,
-					);
-					const withoutWeeks = allDataValues.filter(
-						(d: { period: string }) => d.period.indexOf("W") === -1,
-					);
-
-					const processed = Object.entries(
-						groupBy(
-							withWeeks,
-							(v) =>
-								`${v.attributeOptionCombo}${v.categoryOptionCombo}${v.dataElement}${v.orgUnit}`,
-						),
-					).map(([, values]) => ({
-						...values[0],
-						value: String(sum(values.map((d: { value: string }) => Number(d.value)))),
-					}));
-
+				if (!isEmpty(allDataValues)) {
 					allValues = fromPairs<string>(
-						withoutWeeks
-							.concat(processed)
-							.map(
-								({
-									dataElement,
-									categoryOptionCombo,
-									attributeOptionCombo,
-									value,
-								}: {
-									dataElement: string;
-									categoryOptionCombo: string;
-									attributeOptionCombo: string;
-									value: string;
-								}) => [
-									`${dataElement}.${categoryOptionCombo}.${attributeOptionCombo}`,
-									value,
-								],
-							),
+						allDataValues.map(
+							({
+								dataElement,
+								categoryOptionCombo,
+								attributeOptionCombo,
+								value,
+							}: {
+								dataElement: string;
+								categoryOptionCombo: string;
+								attributeOptionCombo: string;
+								value: string;
+							}) => [
+								`${dataElement}.${categoryOptionCombo}.${attributeOptionCombo}`,
+								value,
+							],
+						),
 					);
 				}
 
-				if (allPrevDataValues) {
-					const withWeeks = allPrevDataValues.filter(
-						(d: { period: string }) => d.period.indexOf("W") !== -1,
-					);
-					const withoutWeeks = allPrevDataValues.filter(
-						(d: { period: string }) => d.period.indexOf("W") === -1,
-					);
-
-					const processed = Object.entries(
-						groupBy(
-							withWeeks,
-							(v) =>
-								`${v.attributeOptionCombo}${v.categoryOptionCombo}${v.dataElement}${v.orgUnit}`,
-						),
-					).map(([, values]) => ({
-						...values[0],
-						value: String(sum(values.map((d: { value: string }) => Number(d.value)))),
-					}));
-
+				if (!isEmpty(allPrevDataValues)) {
 					allValuesPrev = fromPairs<string>(
-						withoutWeeks
-							.concat(processed)
-							.map(
-								({
-									dataElement,
-									categoryOptionCombo,
-									attributeOptionCombo,
-									value,
-								}: {
-									dataElement: string;
-									categoryOptionCombo: string;
-									attributeOptionCombo: string;
-									value: string;
-								}) => [
-									`${dataElement}.${categoryOptionCombo}.${attributeOptionCombo}`,
-									value,
-								],
-							),
+						allPrevDataValues.map(
+							({
+								dataElement,
+								categoryOptionCombo,
+								attributeOptionCombo,
+								value,
+							}: {
+								dataElement: string;
+								categoryOptionCombo: string;
+								attributeOptionCombo: string;
+								value: string;
+							}) => [
+								`${dataElement}.${categoryOptionCombo}.${attributeOptionCombo}`,
+								value,
+							],
+						),
 					);
 				}
 
 				const payload = this.processData(allValues, allValuesPrev, period);
-				const startDate = dayjs(period[0]).startOf("week");
-				const endDate = dayjs(period[0]).endOf("week");
 
-				const [start, end] = processDates(
-					getDatesBetween(startDate.toDate(), endDate.toDate()),
-				);
+				const finalPayload = Object.entries<{ value: string | number }>(payload)
+					.filter(([key]) => key && key !== "0")
+					.map(([key, value]) => [key, Number(value.value)]);
 
 				const response = await this.postToIRHIS({
-					payload,
+					payload: finalPayload,
 					facility,
 					startDate: start,
 					endDate: end,
 				});
-				this.logger.info(response);
 				previous = [...previous, response];
 				await api.put("dataStore/irhis/previous", previous);
 			}

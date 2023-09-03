@@ -33858,5 +33858,261 @@
   {
     "key": "HIV_number_at_the_end_of_reporting_period_HIV_ART_Nat_total_crude",
     "value": "JMV3qP825Pe.HllvX50cXC0+PCgPk2ogPHn.HllvX50cXC0"
+  },
+  {
+    "key": "IPD_TS_number_at_the_end_of_reporting_period_Ref_lt_1",
+    "value": 0
+  },
+  {
+    "key": "IPD_TS_number_at_the_end_of_reporting_period_Ref_1_4_yrs",
+    "value": 0
+  },
+  {
+    "key": "IPD_TS_number_at_the_end_of_reporting_period_Ref_lt_5",
+    "value": 0
+  },
+  {
+    "key": "IPD_TS_number_at_the_end_of_reporting_period_Ref_5_17_yrs",
+    "value": 0
+  },
+  {
+    "key": "IPD_TS_number_at_the_end_of_reporting_period_Ref_18_59_yrs",
+    "value": 0
+  },
+  {
+    "key": "IPD_TS_number_at_the_end_of_reporting_period_Ref_gt_60_yrs",
+    "value": 0
+  },
+  {
+    "key": "IPD_TS_number_at_the_end_of_reporting_period_Ref_total_crude",
+    "value": "UwnR5kr982Y.QE0t2SWaRky+UwnR5kr982Y.vBmPAWZQDVs+UwnR5kr982Y.vUgKzac3JnH+UwnR5kr982Y.sQZH5BgucFf+UwnR5kr982Y.rj8MoomuB9C+UwnR5kr982Y.Agwj0d0hsc5+UwnR5kr982Y.dvlThSdHovb+UwnR5kr982Y.xg4v26gsfy0+UwnR5kr982Y.XJatc66P7A6+UwnR5kr982Y.u77V67JXHpb+UwnR5kr982Y.ObYelhgHfKG+UwnR5kr982Y.rJw5ESKTTCI+UwnR5kr982Y.S55CGFRkdpq+UwnR5kr982Y.lm5yShJh32E+UwnR5kr982Y.LPATiUAUj1c+UwnR5kr982Y.ToY1RNX7epJ+UwnR5kr982Y.CHqKEyZAHxD+UwnR5kr982Y.U3H71QfQ3EM-ezFHh8VeBTn.HllvX50cXC0-vyOajQA5xTu.QE0t2SWaRky-vyOajQA5xTu.vBmPAWZQDVs-vyOajQA5xTu.vUgKzac3JnH-vyOajQA5xTu.sQZH5BgucFf-vyOajQA5xTu.rj8MoomuB9C-vyOajQA5xTu.Agwj0d0hsc5-vyOajQA5xTu.dvlThSdHovb-vyOajQA5xTu.xg4v26gsfy0-vyOajQA5xTu.XJatc66P7A6-vyOajQA5xTu.u77V67JXHpb-vyOajQA5xTu.ObYelhgHfKG-vyOajQA5xTu.rJw5ESKTTCI-vyOajQA5xTu.S55CGFRkdpq-vyOajQA5xTu.lm5yShJh32E-vyOajQA5xTu.LPATiUAUj1c-vyOajQA5xTu.ToY1RNX7epJ-vyOajQA5xTu.CHqKEyZAHxD-vyOajQA5xTu.U3H71QfQ3EM"
+  },
+  {
+    "key": "IPD_TS_number_at_the_end_of_reporting_period_Nat_lt_1",
+    "value": 0
+  },
+  {
+    "key": "IPD_TS_number_at_the_end_of_reporting_period_Nat_1_4_yrs",
+    "value": 0
+  },
+  {
+    "key": "IPD_TS_number_at_the_end_of_reporting_period_Nat_lt_5",
+    "value": 0
+  },
+  {
+    "key": "IPD_TS_number_at_the_end_of_reporting_period_Nat_5_17_yrs",
+    "value": 0
+  },
+  {
+    "key": "IPD_TS_number_at_the_end_of_reporting_period_Nat_18_59_yrs",
+    "value": 0
+  },
+  {
+    "key": "IPD_TS_number_at_the_end_of_reporting_period_Nat_gt_60_yrs",
+    "value": 0
+  },
+  {
+    "key": "IPD_TS_number_at_the_end_of_reporting_period_Nat_total_crude",
+    "value": "UwnR5kr982Y.QE0t2SWaRky+UwnR5kr982Y.vBmPAWZQDVs+UwnR5kr982Y.vUgKzac3JnH+UwnR5kr982Y.sQZH5BgucFf+UwnR5kr982Y.rj8MoomuB9C+UwnR5kr982Y.Agwj0d0hsc5+UwnR5kr982Y.dvlThSdHovb+UwnR5kr982Y.xg4v26gsfy0+UwnR5kr982Y.XJatc66P7A6+UwnR5kr982Y.u77V67JXHpb+UwnR5kr982Y.ObYelhgHfKG+UwnR5kr982Y.rJw5ESKTTCI+UwnR5kr982Y.S55CGFRkdpq+UwnR5kr982Y.lm5yShJh32E+UwnR5kr982Y.LPATiUAUj1c+UwnR5kr982Y.ToY1RNX7epJ+UwnR5kr982Y.CHqKEyZAHxD+UwnR5kr982Y.U3H71QfQ3EM-ezFHh8VeBTn.HllvX50cXC0-vyOajQA5xTu.QE0t2SWaRky-vyOajQA5xTu.vBmPAWZQDVs-vyOajQA5xTu.vUgKzac3JnH-vyOajQA5xTu.sQZH5BgucFf-vyOajQA5xTu.rj8MoomuB9C-vyOajQA5xTu.Agwj0d0hsc5-vyOajQA5xTu.dvlThSdHovb-vyOajQA5xTu.xg4v26gsfy0-vyOajQA5xTu.XJatc66P7A6-vyOajQA5xTu.u77V67JXHpb-vyOajQA5xTu.ObYelhgHfKG-vyOajQA5xTu.rJw5ESKTTCI-vyOajQA5xTu.S55CGFRkdpq-vyOajQA5xTu.lm5yShJh32E-vyOajQA5xTu.LPATiUAUj1c-vyOajQA5xTu.ToY1RNX7epJ-vyOajQA5xTu.CHqKEyZAHxD-vyOajQA5xTu.U3H71QfQ3EM"
+  },
+  {
+    "key": "SC_TS_number_at_the_end_of_reporting_period_Ref_0_6_mon_M",
+    "value": "WITj8VzdeKr.KTFWWcdg6xx+CXOHeFmTDMC.KTFWWcdg6xx+cMq1VyIjLeT.KTFWWcdg6xx-o5xK6qLqldi.KTFWWcdg6xx-zWlAJsGjAaZ.KTFWWcdg6xx-wtCYH8ZPgo0.KTFWWcdg6xx"
+  },
+  {
+    "key": "SC_TS_number_at_the_end_of_reporting_period_Ref_0_6_mon_F",
+    "value": "WITj8VzdeKr.lNQXRx60Jwi+CXOHeFmTDMC.lNQXRx60Jwi+cMq1VyIjLeT.lNQXRx60Jwi-o5xK6qLqldi.lNQXRx60Jwi-zWlAJsGjAaZ.lNQXRx60Jwi-wtCYH8ZPgo0.lNQXRx60Jwi"
+  },
+  {
+    "key": "SC_TS_number_at_the_end_of_reporting_period_Ref_6_23_mon_M",
+    "value": "WITj8VzdeKr.sHKK94BX2Rp+CXOHeFmTDMC.sHKK94BX2Rp+cMq1VyIjLeT.sHKK94BX2Rp-o5xK6qLqldi.sHKK94BX2Rp-zWlAJsGjAaZ.sHKK94BX2Rp-wtCYH8ZPgo0.sHKK94BX2Rp"
+  },
+  {
+    "key": "SC_TS_number_at_the_end_of_reporting_period_Ref_6_23_mon_F",
+    "value": "WITj8VzdeKr.kkV0Rfqo4Ru+CXOHeFmTDMC.kkV0Rfqo4Ru+cMq1VyIjLeT.kkV0Rfqo4Ru-o5xK6qLqldi.kkV0Rfqo4Ru-zWlAJsGjAaZ.kkV0Rfqo4Ru-wtCYH8ZPgo0.kkV0Rfqo4Ru"
+  },
+  {
+    "key": "SC_TS_number_at_the_end_of_reporting_period_Ref_24_59_mon_M",
+    "value": "WITj8VzdeKr.UKCxMVgAc2s+CXOHeFmTDMC.UKCxMVgAc2s+cMq1VyIjLeT.UKCxMVgAc2s-o5xK6qLqldi.UKCxMVgAc2s-zWlAJsGjAaZ.UKCxMVgAc2s-wtCYH8ZPgo0.UKCxMVgAc2s"
+  },
+  {
+    "key": "SC_TS_number_at_the_end_of_reporting_period_Ref_24_59_mon_F",
+    "value": "WITj8VzdeKr.WyNau0T37h4+CXOHeFmTDMC.WyNau0T37h4+cMq1VyIjLeT.WyNau0T37h4-o5xK6qLqldi.WyNau0T37h4-zWlAJsGjAaZ.WyNau0T37h4-wtCYH8ZPgo0.WyNau0T37h4"
+  },
+  {
+    "key": "SC_TS_number_at_the_end_of_reporting_period_Ref_lt_5",
+    "value": 0
+  },
+  {
+    "key": "SC_TS_number_at_the_end_of_reporting_period_Ref_gte_5",
+    "value": "WITj8VzdeKr.OhmzAkCmkjU+WITj8VzdeKr.oIxEDq59GUL+WITj8VzdeKr.SM9d5ybWcr0+WITj8VzdeKr.H5MiomGgbbi+WITj8VzdeKr.OUPWAOZojRb+WITj8VzdeKr.WalQ4zu7RLz+WITj8VzdeKr.r01f3QfmLJS+WITj8VzdeKr.bmT820wlIV5+WITj8VzdeKr.vrSTfWaEZfP+WITj8VzdeKr.RKbp3GCvRrF+WITj8VzdeKr.I28asEo67Mt+CXOHeFmTDMC.OhmzAkCmkjU+CXOHeFmTDMC.oIxEDq59GUL+CXOHeFmTDMC.SM9d5ybWcr0+CXOHeFmTDMC.H5MiomGgbbi+CXOHeFmTDMC.OUPWAOZojRb+CXOHeFmTDMC.WalQ4zu7RLz+CXOHeFmTDMC.r01f3QfmLJS+CXOHeFmTDMC.bmT820wlIV5+CXOHeFmTDMC.vrSTfWaEZfP+CXOHeFmTDMC.RKbp3GCvRrF+CXOHeFmTDMC.I28asEo67Mt+cMq1VyIjLeT.OhmzAkCmkjU+cMq1VyIjLeT.oIxEDq59GUL+cMq1VyIjLeT.SM9d5ybWcr0+cMq1VyIjLeT.H5MiomGgbbi+cMq1VyIjLeT.OUPWAOZojRb+cMq1VyIjLeT.WalQ4zu7RLz+cMq1VyIjLeT.r01f3QfmLJS+cMq1VyIjLeT.bmT820wlIV5+cMq1VyIjLeT.vrSTfWaEZfP+cMq1VyIjLeT.RKbp3GCvRrF+cMq1VyIjLeT.I28asEo67Mt-o5xK6qLqldi.OhmzAkCmkjU-o5xK6qLqldi.oIxEDq59GUL-o5xK6qLqldi.SM9d5ybWcr0-o5xK6qLqldi.H5MiomGgbbi-o5xK6qLqldi.OUPWAOZojRb-o5xK6qLqldi.WalQ4zu7RLz-o5xK6qLqldi.r01f3QfmLJS-o5xK6qLqldi.bmT820wlIV5-o5xK6qLqldi.vrSTfWaEZfP-o5xK6qLqldi.RKbp3GCvRrF-o5xK6qLqldi.I28asEo67Mt-zWlAJsGjAaZ.OhmzAkCmkjU-zWlAJsGjAaZ.oIxEDq59GUL-zWlAJsGjAaZ.SM9d5ybWcr0-zWlAJsGjAaZ.H5MiomGgbbi-zWlAJsGjAaZ.OUPWAOZojRb-zWlAJsGjAaZ.WalQ4zu7RLz-zWlAJsGjAaZ.r01f3QfmLJS-zWlAJsGjAaZ.bmT820wlIV5-zWlAJsGjAaZ.vrSTfWaEZfP-zWlAJsGjAaZ.RKbp3GCvRrF-zWlAJsGjAaZ.I28asEo67Mt-wtCYH8ZPgo0.OhmzAkCmkjU-wtCYH8ZPgo0.oIxEDq59GUL-wtCYH8ZPgo0.SM9d5ybWcr0-wtCYH8ZPgo0.H5MiomGgbbi-wtCYH8ZPgo0.OUPWAOZojRb-wtCYH8ZPgo0.WalQ4zu7RLz-wtCYH8ZPgo0.r01f3QfmLJS-wtCYH8ZPgo0.bmT820wlIV5-wtCYH8ZPgo0.vrSTfWaEZfP-wtCYH8ZPgo0.RKbp3GCvRrF-wtCYH8ZPgo0.I28asEo67Mt"
+  },
+  {
+    "key": "SC_TS_number_at_the_end_of_reporting_period_Ref_total_crude",
+    "value": 0
+  },
+  {
+    "key": "SC_TS_number_at_the_end_of_reporting_period_Nat_0_6_mon",
+    "value": "WITj8VzdeKr.KTFWWcdg6xx+CXOHeFmTDMC.KTFWWcdg6xx+cMq1VyIjLeT.KTFWWcdg6xx-o5xK6qLqldi.KTFWWcdg6xx-zWlAJsGjAaZ.KTFWWcdg6xx-wtCYH8ZPgo0.KTFWWcdg6xx+WITj8VzdeKr.lNQXRx60Jwi+CXOHeFmTDMC.lNQXRx60Jwi+cMq1VyIjLeT.lNQXRx60Jwi-o5xK6qLqldi.lNQXRx60Jwi-zWlAJsGjAaZ.lNQXRx60Jwi-wtCYH8ZPgo0.lNQXRx60Jwi"
+  },
+  {
+    "key": "SC_TS_number_at_the_end_of_reporting_period_Nat_6_23_mon",
+    "value": "WITj8VzdeKr.sHKK94BX2Rp+CXOHeFmTDMC.sHKK94BX2Rp+cMq1VyIjLeT.sHKK94BX2Rp-o5xK6qLqldi.sHKK94BX2Rp-zWlAJsGjAaZ.sHKK94BX2Rp-wtCYH8ZPgo0.sHKK94BX2Rp+WITj8VzdeKr.kkV0Rfqo4Ru+CXOHeFmTDMC.kkV0Rfqo4Ru+cMq1VyIjLeT.kkV0Rfqo4Ru-o5xK6qLqldi.kkV0Rfqo4Ru-zWlAJsGjAaZ.kkV0Rfqo4Ru-wtCYH8ZPgo0.kkV0Rfqo4Ru"
+  },
+  {
+    "key": "SC_TS_number_at_the_end_of_reporting_period_Nat_24_59_mon",
+    "value": "WITj8VzdeKr.UKCxMVgAc2s+CXOHeFmTDMC.UKCxMVgAc2s+cMq1VyIjLeT.UKCxMVgAc2s-o5xK6qLqldi.UKCxMVgAc2s-zWlAJsGjAaZ.UKCxMVgAc2s-wtCYH8ZPgo0.UKCxMVgAc2s+WITj8VzdeKr.WyNau0T37h4+CXOHeFmTDMC.WyNau0T37h4+cMq1VyIjLeT.WyNau0T37h4-o5xK6qLqldi.WyNau0T37h4-zWlAJsGjAaZ.WyNau0T37h4-wtCYH8ZPgo0.WyNau0T37h4"
+  },
+  {
+    "key": "SC_TS_number_at_the_end_of_reporting_period_Nat_lt_5",
+    "value": 0
+  },
+  {
+    "key": "SC_TS_number_at_the_end_of_reporting_period_Nat_gte_5",
+    "value": "WITj8VzdeKr.OhmzAkCmkjU+WITj8VzdeKr.oIxEDq59GUL+WITj8VzdeKr.SM9d5ybWcr0+WITj8VzdeKr.H5MiomGgbbi+WITj8VzdeKr.OUPWAOZojRb+WITj8VzdeKr.WalQ4zu7RLz+WITj8VzdeKr.r01f3QfmLJS+WITj8VzdeKr.bmT820wlIV5+WITj8VzdeKr.vrSTfWaEZfP+WITj8VzdeKr.RKbp3GCvRrF+WITj8VzdeKr.I28asEo67Mt+CXOHeFmTDMC.OhmzAkCmkjU+CXOHeFmTDMC.oIxEDq59GUL+CXOHeFmTDMC.SM9d5ybWcr0+CXOHeFmTDMC.H5MiomGgbbi+CXOHeFmTDMC.OUPWAOZojRb+CXOHeFmTDMC.WalQ4zu7RLz+CXOHeFmTDMC.r01f3QfmLJS+CXOHeFmTDMC.bmT820wlIV5+CXOHeFmTDMC.vrSTfWaEZfP+CXOHeFmTDMC.RKbp3GCvRrF+CXOHeFmTDMC.I28asEo67Mt+cMq1VyIjLeT.OhmzAkCmkjU+cMq1VyIjLeT.oIxEDq59GUL+cMq1VyIjLeT.SM9d5ybWcr0+cMq1VyIjLeT.H5MiomGgbbi+cMq1VyIjLeT.OUPWAOZojRb+cMq1VyIjLeT.WalQ4zu7RLz+cMq1VyIjLeT.r01f3QfmLJS+cMq1VyIjLeT.bmT820wlIV5+cMq1VyIjLeT.vrSTfWaEZfP+cMq1VyIjLeT.RKbp3GCvRrF+cMq1VyIjLeT.I28asEo67Mt-o5xK6qLqldi.OhmzAkCmkjU-o5xK6qLqldi.oIxEDq59GUL-o5xK6qLqldi.SM9d5ybWcr0-o5xK6qLqldi.H5MiomGgbbi-o5xK6qLqldi.OUPWAOZojRb-o5xK6qLqldi.WalQ4zu7RLz-o5xK6qLqldi.r01f3QfmLJS-o5xK6qLqldi.bmT820wlIV5-o5xK6qLqldi.vrSTfWaEZfP-o5xK6qLqldi.RKbp3GCvRrF-o5xK6qLqldi.I28asEo67Mt-zWlAJsGjAaZ.OhmzAkCmkjU-zWlAJsGjAaZ.oIxEDq59GUL-zWlAJsGjAaZ.SM9d5ybWcr0-zWlAJsGjAaZ.H5MiomGgbbi-zWlAJsGjAaZ.OUPWAOZojRb-zWlAJsGjAaZ.WalQ4zu7RLz-zWlAJsGjAaZ.r01f3QfmLJS-zWlAJsGjAaZ.bmT820wlIV5-zWlAJsGjAaZ.vrSTfWaEZfP-zWlAJsGjAaZ.RKbp3GCvRrF-zWlAJsGjAaZ.I28asEo67Mt-wtCYH8ZPgo0.OhmzAkCmkjU-wtCYH8ZPgo0.oIxEDq59GUL-wtCYH8ZPgo0.SM9d5ybWcr0-wtCYH8ZPgo0.H5MiomGgbbi-wtCYH8ZPgo0.OUPWAOZojRb-wtCYH8ZPgo0.WalQ4zu7RLz-wtCYH8ZPgo0.r01f3QfmLJS-wtCYH8ZPgo0.bmT820wlIV5-wtCYH8ZPgo0.vrSTfWaEZfP-wtCYH8ZPgo0.RKbp3GCvRrF-wtCYH8ZPgo0.I28asEo67Mt"
+  },
+  {
+    "key": "SC_TS_number_at_the_end_of_reporting_period_Nat_total_crude",
+    "value": 0
+  },
+  {
+    "key": "OTP_TS_number_at_the_end_of_reporting_period_Ref_0_6_mon_M",
+    "value": "HsvF0OV9dTI.KTFWWcdg6xx+yRkbB2NH8xI.KTFWWcdg6xx-cq15vx01pBd.KTFWWcdg6xx-TjtPAy0wjAg.KTFWWcdg6xx-P2hp9UJuCEK.KTFWWcdg6xx-yTBwoDPg0Yt.KTFWWcdg6xx"
+  },
+  {
+    "key": "OTP_TS_number_at_the_end_of_reporting_period_Ref_0_6_mon_F",
+    "value": "HsvF0OV9dTI.lNQXRx60Jwi+yRkbB2NH8xI.lNQXRx60Jwi-cq15vx01pBd.lNQXRx60Jwi-TjtPAy0wjAg.lNQXRx60Jwi-P2hp9UJuCEK.lNQXRx60Jwi-yTBwoDPg0Yt.lNQXRx60Jwi"
+  },
+  {
+    "key": "OTP_TS_number_at_the_end_of_reporting_period_Ref_6_23_mon_M",
+    "value": "Tf3LSnb1nxI.sHKK94BX2Rp+HsvF0OV9dTI.sHKK94BX2Rp+yRkbB2NH8xI.sHKK94BX2Rp-cq15vx01pBd.sHKK94BX2Rp-TjtPAy0wjAg.sHKK94BX2Rp-P2hp9UJuCEK.sHKK94BX2Rp-yTBwoDPg0Yt.sHKK94BX2Rp"
+  },
+  {
+    "key": "OTP_TS_number_at_the_end_of_reporting_period_Ref_6_23_mon_F",
+    "value": "Tf3LSnb1nxI.kkV0Rfqo4Ru+HsvF0OV9dTI.kkV0Rfqo4Ru+yRkbB2NH8xI.kkV0Rfqo4Ru-cq15vx01pBd.kkV0Rfqo4Ru-TjtPAy0wjAg.kkV0Rfqo4Ru-P2hp9UJuCEK.kkV0Rfqo4Ru-yTBwoDPg0Yt.kkV0Rfqo4Ru"
+  },
+  {
+    "key": "OTP_TS_number_at_the_end_of_reporting_period_Ref_24_59_mon_M",
+    "value": "Tf3LSnb1nxI.UKCxMVgAc2s+HsvF0OV9dTI.UKCxMVgAc2s+yRkbB2NH8xI.UKCxMVgAc2s-cq15vx01pBd.UKCxMVgAc2s-TjtPAy0wjAg.UKCxMVgAc2s-P2hp9UJuCEK.UKCxMVgAc2s-yTBwoDPg0Yt.UKCxMVgAc2s"
+  },
+  {
+    "key": "OTP_TS_number_at_the_end_of_reporting_period_Ref_24_59_mon_F",
+    "value": "Tf3LSnb1nxI.WyNau0T37h4+HsvF0OV9dTI.WyNau0T37h4+yRkbB2NH8xI.WyNau0T37h4-cq15vx01pBd.WyNau0T37h4-TjtPAy0wjAg.WyNau0T37h4-P2hp9UJuCEK.WyNau0T37h4-yTBwoDPg0Yt.WyNau0T37h4"
+  },
+  {
+    "key": "OTP_TS_number_at_the_end_of_reporting_period_Ref_lt_5",
+    "value": 0
+  },
+  {
+    "key": "OTP_TS_number_at_the_end_of_reporting_period_Ref_gte_5",
+    "value": "Tf3LSnb1nxI.OhmzAkCmkjU+Tf3LSnb1nxI.oIxEDq59GUL+zxLsBKzgdx2.SM9d5ybWcr0+zxLsBKzgdx2.H5MiomGgbbi+zxLsBKzgdx2.OUPWAOZojRb+Oxh7nQrH5xh.WalQ4zu7RLz+Oxh7nQrH5xh.r01f3QfmLJS+Oxh7nQrH5xh.bmT820wlIV5+Oxh7nQrH5xh.vrSTfWaEZfP+Oxh7nQrH5xh.RKbp3GCvRrF+Oxh7nQrH5xh.I28asEo67Mt+HsvF0OV9dTI.OhmzAkCmkjU+HsvF0OV9dTI.oIxEDq59GUL+uyiwwAM4EdK.SM9d5ybWcr0+uyiwwAM4EdK.H5MiomGgbbi+uyiwwAM4EdK.OUPWAOZojRb+sT8ZD8ZDzVG.WalQ4zu7RLz+sT8ZD8ZDzVG.r01f3QfmLJS+sT8ZD8ZDzVG.bmT820wlIV5+sT8ZD8ZDzVG.vrSTfWaEZfP+sT8ZD8ZDzVG.RKbp3GCvRrF+sT8ZD8ZDzVG.I28asEo67Mt+yRkbB2NH8xI.OhmzAkCmkjU+yRkbB2NH8xI.oIxEDq59GUL+V7E2rNwJaxs.SM9d5ybWcr0+V7E2rNwJaxs.H5MiomGgbbi+V7E2rNwJaxs.OUPWAOZojRb+ffA4XzZ1TDX.WalQ4zu7RLz+ffA4XzZ1TDX.r01f3QfmLJS+ffA4XzZ1TDX.bmT820wlIV5+ffA4XzZ1TDX.vrSTfWaEZfP+ffA4XzZ1TDX.RKbp3GCvRrF+ffA4XzZ1TDX.I28asEo67Mt-cq15vx01pBd.OhmzAkCmkjU-cq15vx01pBd.oIxEDq59GUL-tBAURKVnCEX.SM9d5ybWcr0-tBAURKVnCEX.H5MiomGgbbi-tBAURKVnCEX.OUPWAOZojRb-ci2tX2QsAVc.WalQ4zu7RLz-ci2tX2QsAVc.r01f3QfmLJS-ci2tX2QsAVc.bmT820wlIV5-ci2tX2QsAVc.vrSTfWaEZfP-ci2tX2QsAVc.RKbp3GCvRrF-ci2tX2QsAVc.I28asEo67Mt-TjtPAy0wjAg.OhmzAkCmkjU-TjtPAy0wjAg.oIxEDq59GUL-Gvc5u8fMe5n.SM9d5ybWcr0-Gvc5u8fMe5n.H5MiomGgbbi-Gvc5u8fMe5n.OUPWAOZojRb-ObjH0eovFZK.WalQ4zu7RLz-ObjH0eovFZK.r01f3QfmLJS-ObjH0eovFZK.bmT820wlIV5-ObjH0eovFZK.vrSTfWaEZfP-ObjH0eovFZK.RKbp3GCvRrF-ObjH0eovFZK.I28asEo67Mt-P2hp9UJuCEK.OhmzAkCmkjU-P2hp9UJuCEK.oIxEDq59GUL-tWPk74YvWxJ.SM9d5ybWcr0-tWPk74YvWxJ.H5MiomGgbbi-tWPk74YvWxJ.OUPWAOZojRb-JXs3K173KDL.WalQ4zu7RLz-JXs3K173KDL.r01f3QfmLJS-JXs3K173KDL.bmT820wlIV5-JXs3K173KDL.vrSTfWaEZfP-JXs3K173KDL.RKbp3GCvRrF-JXs3K173KDL.I28asEo67Mt-yTBwoDPg0Yt.OhmzAkCmkjU-yTBwoDPg0Yt.oIxEDq59GUL-ghMTXAc480f.SM9d5ybWcr0-ghMTXAc480f.H5MiomGgbbi-ghMTXAc480f.OUPWAOZojRb-mKI86reDKfe.WalQ4zu7RLz-mKI86reDKfe.r01f3QfmLJS-mKI86reDKfe.bmT820wlIV5-mKI86reDKfe.vrSTfWaEZfP-mKI86reDKfe.RKbp3GCvRrF-mKI86reDKfe.I28asEo67Mt"
+  },
+  {
+    "key": "OTP_TS_number_at_the_end_of_reporting_period_Ref_total_crude",
+    "value": 0
+  },
+  {
+    "key": "OTP_TS_number_at_the_end_of_reporting_period_Nat_0_6_mon",
+    "value": "HsvF0OV9dTI.KTFWWcdg6xx+yRkbB2NH8xI.KTFWWcdg6xx-cq15vx01pBd.KTFWWcdg6xx-TjtPAy0wjAg.KTFWWcdg6xx-P2hp9UJuCEK.KTFWWcdg6xx-yTBwoDPg0Yt.KTFWWcdg6xx+HsvF0OV9dTI.lNQXRx60Jwi+yRkbB2NH8xI.lNQXRx60Jwi-cq15vx01pBd.lNQXRx60Jwi-TjtPAy0wjAg.lNQXRx60Jwi-P2hp9UJuCEK.lNQXRx60Jwi-yTBwoDPg0Yt.lNQXRx60Jwi"
+  },
+  {
+    "key": "OTP_TS_number_at_the_end_of_reporting_period_Nat_6_23_mon",
+    "value": "Tf3LSnb1nxI.sHKK94BX2Rp+HsvF0OV9dTI.sHKK94BX2Rp+yRkbB2NH8xI.sHKK94BX2Rp-cq15vx01pBd.sHKK94BX2Rp-TjtPAy0wjAg.sHKK94BX2Rp-P2hp9UJuCEK.sHKK94BX2Rp-yTBwoDPg0Yt.sHKK94BX2Rp+Tf3LSnb1nxI.kkV0Rfqo4Ru+HsvF0OV9dTI.kkV0Rfqo4Ru+yRkbB2NH8xI.kkV0Rfqo4Ru-cq15vx01pBd.kkV0Rfqo4Ru-TjtPAy0wjAg.kkV0Rfqo4Ru-P2hp9UJuCEK.kkV0Rfqo4Ru-yTBwoDPg0Yt.kkV0Rfqo4Ru"
+  },
+  {
+    "key": "OTP_TS_number_at_the_end_of_reporting_period_Nat_24_59_mon",
+    "value": "Tf3LSnb1nxI.UKCxMVgAc2s+HsvF0OV9dTI.UKCxMVgAc2s+yRkbB2NH8xI.UKCxMVgAc2s-cq15vx01pBd.UKCxMVgAc2s-TjtPAy0wjAg.UKCxMVgAc2s-P2hp9UJuCEK.UKCxMVgAc2s-yTBwoDPg0Yt.UKCxMVgAc2s+Tf3LSnb1nxI.WyNau0T37h4+HsvF0OV9dTI.WyNau0T37h4+yRkbB2NH8xI.WyNau0T37h4-cq15vx01pBd.WyNau0T37h4-TjtPAy0wjAg.WyNau0T37h4-P2hp9UJuCEK.WyNau0T37h4-yTBwoDPg0Yt.WyNau0T37h4"
+  },
+  {
+    "key": "OTP_TS_number_at_the_end_of_reporting_period_Nat_lt_5",
+    "value": 0
+  },
+  {
+    "key": "OTP_TS_number_at_the_end_of_reporting_period_Nat_gte_5",
+    "value": "Tf3LSnb1nxI.OhmzAkCmkjU+Tf3LSnb1nxI.oIxEDq59GUL+zxLsBKzgdx2.SM9d5ybWcr0+zxLsBKzgdx2.H5MiomGgbbi+zxLsBKzgdx2.OUPWAOZojRb+Oxh7nQrH5xh.WalQ4zu7RLz+Oxh7nQrH5xh.r01f3QfmLJS+Oxh7nQrH5xh.bmT820wlIV5+Oxh7nQrH5xh.vrSTfWaEZfP+Oxh7nQrH5xh.RKbp3GCvRrF+Oxh7nQrH5xh.I28asEo67Mt+HsvF0OV9dTI.OhmzAkCmkjU+HsvF0OV9dTI.oIxEDq59GUL+uyiwwAM4EdK.SM9d5ybWcr0+uyiwwAM4EdK.H5MiomGgbbi+uyiwwAM4EdK.OUPWAOZojRb+sT8ZD8ZDzVG.WalQ4zu7RLz+sT8ZD8ZDzVG.r01f3QfmLJS+sT8ZD8ZDzVG.bmT820wlIV5+sT8ZD8ZDzVG.vrSTfWaEZfP+sT8ZD8ZDzVG.RKbp3GCvRrF+sT8ZD8ZDzVG.I28asEo67Mt+yRkbB2NH8xI.OhmzAkCmkjU+yRkbB2NH8xI.oIxEDq59GUL+V7E2rNwJaxs.SM9d5ybWcr0+V7E2rNwJaxs.H5MiomGgbbi+V7E2rNwJaxs.OUPWAOZojRb+ffA4XzZ1TDX.WalQ4zu7RLz+ffA4XzZ1TDX.r01f3QfmLJS+ffA4XzZ1TDX.bmT820wlIV5+ffA4XzZ1TDX.vrSTfWaEZfP+ffA4XzZ1TDX.RKbp3GCvRrF+ffA4XzZ1TDX.I28asEo67Mt-cq15vx01pBd.OhmzAkCmkjU-cq15vx01pBd.oIxEDq59GUL-tBAURKVnCEX.SM9d5ybWcr0-tBAURKVnCEX.H5MiomGgbbi-tBAURKVnCEX.OUPWAOZojRb-ci2tX2QsAVc.WalQ4zu7RLz-ci2tX2QsAVc.r01f3QfmLJS-ci2tX2QsAVc.bmT820wlIV5-ci2tX2QsAVc.vrSTfWaEZfP-ci2tX2QsAVc.RKbp3GCvRrF-ci2tX2QsAVc.I28asEo67Mt-TjtPAy0wjAg.OhmzAkCmkjU-TjtPAy0wjAg.oIxEDq59GUL-Gvc5u8fMe5n.SM9d5ybWcr0-Gvc5u8fMe5n.H5MiomGgbbi-Gvc5u8fMe5n.OUPWAOZojRb-ObjH0eovFZK.WalQ4zu7RLz-ObjH0eovFZK.r01f3QfmLJS-ObjH0eovFZK.bmT820wlIV5-ObjH0eovFZK.vrSTfWaEZfP-ObjH0eovFZK.RKbp3GCvRrF-ObjH0eovFZK.I28asEo67Mt-P2hp9UJuCEK.OhmzAkCmkjU-P2hp9UJuCEK.oIxEDq59GUL-tWPk74YvWxJ.SM9d5ybWcr0-tWPk74YvWxJ.H5MiomGgbbi-tWPk74YvWxJ.OUPWAOZojRb-JXs3K173KDL.WalQ4zu7RLz-JXs3K173KDL.r01f3QfmLJS-JXs3K173KDL.bmT820wlIV5-JXs3K173KDL.vrSTfWaEZfP-JXs3K173KDL.RKbp3GCvRrF-JXs3K173KDL.I28asEo67Mt-yTBwoDPg0Yt.OhmzAkCmkjU-yTBwoDPg0Yt.oIxEDq59GUL-ghMTXAc480f.SM9d5ybWcr0-ghMTXAc480f.H5MiomGgbbi-ghMTXAc480f.OUPWAOZojRb-mKI86reDKfe.WalQ4zu7RLz-mKI86reDKfe.r01f3QfmLJS-mKI86reDKfe.bmT820wlIV5-mKI86reDKfe.vrSTfWaEZfP-mKI86reDKfe.RKbp3GCvRrF-mKI86reDKfe.I28asEo67Mt"
+  },
+  {
+    "key": "OTP_TS_number_at_the_end_of_reporting_period_Nat_total_crude",
+    "value": 0
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Ref_0_6_mon_M",
+    "value": "VTCscm6DGR4.KTFWWcdg6xx+t2dHPUGZW95.KTFWWcdg6xx-Wkf7dUTz6p3.KTFWWcdg6xx-ULi5iBGONAu.KTFWWcdg6xx-nIcdxDJCdHx.KTFWWcdg6xx-BV7XJhKZIp5.KTFWWcdg6xx"
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Ref_0_6_mon_F",
+    "value": "VTCscm6DGR4.lNQXRx60Jwi+t2dHPUGZW95.lNQXRx60Jwi-Wkf7dUTz6p3.lNQXRx60Jwi-ULi5iBGONAu.lNQXRx60Jwi-nIcdxDJCdHx.lNQXRx60Jwi-BV7XJhKZIp5.lNQXRx60Jwi"
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Ref_6_23_mon_M",
+    "value": "w39yVsi1vfw.sHKK94BX2Rp+VTCscm6DGR4.sHKK94BX2Rp+t2dHPUGZW95.sHKK94BX2Rp-Wkf7dUTz6p3.sHKK94BX2Rp-ULi5iBGONAu.sHKK94BX2Rp-nIcdxDJCdHx.sHKK94BX2Rp-BV7XJhKZIp5.sHKK94BX2Rp"
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Ref_6_23_mon_F",
+    "value": "w39yVsi1vfw.kkV0Rfqo4Ru+VTCscm6DGR4.kkV0Rfqo4Ru+t2dHPUGZW95.kkV0Rfqo4Ru-Wkf7dUTz6p3.kkV0Rfqo4Ru-ULi5iBGONAu.kkV0Rfqo4Ru-nIcdxDJCdHx.kkV0Rfqo4Ru-BV7XJhKZIp5.kkV0Rfqo4Ru"
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Ref_24_59_mon_M",
+    "value": "w39yVsi1vfw.UKCxMVgAc2s+VTCscm6DGR4.UKCxMVgAc2s+t2dHPUGZW95.UKCxMVgAc2s-Wkf7dUTz6p3.UKCxMVgAc2s-ULi5iBGONAu.UKCxMVgAc2s-nIcdxDJCdHx.UKCxMVgAc2s-BV7XJhKZIp5.UKCxMVgAc2s"
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Ref_24_59_mon_F",
+    "value": "w39yVsi1vfw.WyNau0T37h4+VTCscm6DGR4.WyNau0T37h4+t2dHPUGZW95.WyNau0T37h4-Wkf7dUTz6p3.WyNau0T37h4-ULi5iBGONAu.WyNau0T37h4-nIcdxDJCdHx.WyNau0T37h4-BV7XJhKZIp5.WyNau0T37h4"
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Ref_lt_5",
+    "value": 0
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Ref_gte_5",
+    "value": "w39yVsi1vfw.OhmzAkCmkjU+w39yVsi1vfw.oIxEDq59GUL+yTdjlNMcPQA.SM9d5ybWcr0+yTdjlNMcPQA.H5MiomGgbbi+yTdjlNMcPQA.OUPWAOZojRb+EQK28HH3I2m.WalQ4zu7RLz+EQK28HH3I2m.bmT820wlIV5+EQK28HH3I2m.RKbp3GCvRrF+VTCscm6DGR4.OhmzAkCmkjU+VTCscm6DGR4.oIxEDq59GUL+zZrI8KMlwOY.SM9d5ybWcr0+zZrI8KMlwOY.H5MiomGgbbi+zZrI8KMlwOY.OUPWAOZojRb+PbLpJq9pGZC.WalQ4zu7RLz+PbLpJq9pGZC.bmT820wlIV5+PbLpJq9pGZC.RKbp3GCvRrF+t2dHPUGZW95.OhmzAkCmkjU+t2dHPUGZW95.oIxEDq59GUL+csLlRkTlgEa.SM9d5ybWcr0+csLlRkTlgEa.H5MiomGgbbi+csLlRkTlgEa.OUPWAOZojRb+nhk5V6yA2lZ.WalQ4zu7RLz+nhk5V6yA2lZ.bmT820wlIV5+nhk5V6yA2lZ.RKbp3GCvRrF-Wkf7dUTz6p3.OhmzAkCmkjU-Wkf7dUTz6p3.oIxEDq59GUL-CT9vCaAAuDP.SM9d5ybWcr0-CT9vCaAAuDP.H5MiomGgbbi-CT9vCaAAuDP.OUPWAOZojRb-uLacgIRcyEn.WalQ4zu7RLz-uLacgIRcyEn.bmT820wlIV5-uLacgIRcyEn.RKbp3GCvRrF-ULi5iBGONAu.OhmzAkCmkjU-ULi5iBGONAu.oIxEDq59GUL-KOwVEU2EA7Z.SM9d5ybWcr0-KOwVEU2EA7Z.H5MiomGgbbi-KOwVEU2EA7Z.OUPWAOZojRb-skBQWWv6gl1.WalQ4zu7RLz-skBQWWv6gl1.bmT820wlIV5-skBQWWv6gl1.RKbp3GCvRrF-nIcdxDJCdHx.OhmzAkCmkjU-nIcdxDJCdHx.oIxEDq59GUL-HmuIHZ6mB5C.SM9d5ybWcr0-HmuIHZ6mB5C.H5MiomGgbbi-HmuIHZ6mB5C.OUPWAOZojRb-V69eTQCM24s.WalQ4zu7RLz-V69eTQCM24s.bmT820wlIV5-V69eTQCM24s.RKbp3GCvRrF-BV7XJhKZIp5.OhmzAkCmkjU-BV7XJhKZIp5.oIxEDq59GUL-HrHAQ04IZfY.SM9d5ybWcr0-HrHAQ04IZfY.H5MiomGgbbi-HrHAQ04IZfY.OUPWAOZojRb-LKb1YnJQsWx.WalQ4zu7RLz-LKb1YnJQsWx.bmT820wlIV5-LKb1YnJQsWx.RKbp3GCvRrF"
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Ref_HIV_TB_M",
+    "value": 0
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Ref_HIV_TB_F",
+    "value": 0
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Ref_Pregnant_and_Lactating",
+    "value": "EQK28HH3I2m.r01f3QfmLJS+EQK28HH3I2m.vrSTfWaEZfP+EQK28HH3I2m.I28asEo67Mt+PbLpJq9pGZC.r01f3QfmLJS+PbLpJq9pGZC.vrSTfWaEZfP+PbLpJq9pGZC.I28asEo67Mt+nhk5V6yA2lZ.r01f3QfmLJS+nhk5V6yA2lZ.vrSTfWaEZfP+nhk5V6yA2lZ.I28asEo67Mt-uLacgIRcyEn.r01f3QfmLJS-uLacgIRcyEn.vrSTfWaEZfP-uLacgIRcyEn.I28asEo67Mt-skBQWWv6gl1.r01f3QfmLJS-skBQWWv6gl1.vrSTfWaEZfP-skBQWWv6gl1.I28asEo67Mt-V69eTQCM24s.r01f3QfmLJS-V69eTQCM24s.vrSTfWaEZfP-V69eTQCM24s.I28asEo67Mt-LKb1YnJQsWx.r01f3QfmLJS-LKb1YnJQsWx.vrSTfWaEZfP-LKb1YnJQsWx.I28asEo67Mt"
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Ref_total_crude",
+    "value": 0
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Nat_0_6_mon",
+    "value": "VTCscm6DGR4.KTFWWcdg6xx+t2dHPUGZW95.KTFWWcdg6xx-Wkf7dUTz6p3.KTFWWcdg6xx-ULi5iBGONAu.KTFWWcdg6xx-nIcdxDJCdHx.KTFWWcdg6xx-BV7XJhKZIp5.KTFWWcdg6xx+VTCscm6DGR4.lNQXRx60Jwi+t2dHPUGZW95.lNQXRx60Jwi-Wkf7dUTz6p3.lNQXRx60Jwi-ULi5iBGONAu.lNQXRx60Jwi-nIcdxDJCdHx.lNQXRx60Jwi-BV7XJhKZIp5.lNQXRx60Jwi"
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Nat_6_23_mon",
+    "value": "w39yVsi1vfw.sHKK94BX2Rp+VTCscm6DGR4.sHKK94BX2Rp+t2dHPUGZW95.sHKK94BX2Rp-Wkf7dUTz6p3.sHKK94BX2Rp-ULi5iBGONAu.sHKK94BX2Rp-nIcdxDJCdHx.sHKK94BX2Rp-BV7XJhKZIp5.sHKK94BX2Rp+w39yVsi1vfw.kkV0Rfqo4Ru+VTCscm6DGR4.kkV0Rfqo4Ru+t2dHPUGZW95.kkV0Rfqo4Ru-Wkf7dUTz6p3.kkV0Rfqo4Ru-ULi5iBGONAu.kkV0Rfqo4Ru-nIcdxDJCdHx.kkV0Rfqo4Ru-BV7XJhKZIp5.kkV0Rfqo4Ru"
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Nat_24_59_mon",
+    "value": "w39yVsi1vfw.UKCxMVgAc2s+VTCscm6DGR4.UKCxMVgAc2s+t2dHPUGZW95.UKCxMVgAc2s-Wkf7dUTz6p3.UKCxMVgAc2s-ULi5iBGONAu.UKCxMVgAc2s-nIcdxDJCdHx.UKCxMVgAc2s-BV7XJhKZIp5.UKCxMVgAc2s+w39yVsi1vfw.WyNau0T37h4+VTCscm6DGR4.WyNau0T37h4+t2dHPUGZW95.WyNau0T37h4-Wkf7dUTz6p3.WyNau0T37h4-ULi5iBGONAu.WyNau0T37h4-nIcdxDJCdHx.WyNau0T37h4-BV7XJhKZIp5.WyNau0T37h4"
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Nat_lt_5",
+    "value": 0
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Nat_gte_5",
+    "value": "w39yVsi1vfw.OhmzAkCmkjU+w39yVsi1vfw.oIxEDq59GUL+yTdjlNMcPQA.SM9d5ybWcr0+yTdjlNMcPQA.H5MiomGgbbi+yTdjlNMcPQA.OUPWAOZojRb+EQK28HH3I2m.WalQ4zu7RLz+EQK28HH3I2m.bmT820wlIV5+EQK28HH3I2m.RKbp3GCvRrF+VTCscm6DGR4.OhmzAkCmkjU+VTCscm6DGR4.oIxEDq59GUL+zZrI8KMlwOY.SM9d5ybWcr0+zZrI8KMlwOY.H5MiomGgbbi+zZrI8KMlwOY.OUPWAOZojRb+PbLpJq9pGZC.WalQ4zu7RLz+PbLpJq9pGZC.bmT820wlIV5+PbLpJq9pGZC.RKbp3GCvRrF+t2dHPUGZW95.OhmzAkCmkjU+t2dHPUGZW95.oIxEDq59GUL+csLlRkTlgEa.SM9d5ybWcr0+csLlRkTlgEa.H5MiomGgbbi+csLlRkTlgEa.OUPWAOZojRb+nhk5V6yA2lZ.WalQ4zu7RLz+nhk5V6yA2lZ.bmT820wlIV5+nhk5V6yA2lZ.RKbp3GCvRrF-Wkf7dUTz6p3.OhmzAkCmkjU-Wkf7dUTz6p3.oIxEDq59GUL-CT9vCaAAuDP.SM9d5ybWcr0-CT9vCaAAuDP.H5MiomGgbbi-CT9vCaAAuDP.OUPWAOZojRb-uLacgIRcyEn.WalQ4zu7RLz-uLacgIRcyEn.bmT820wlIV5-uLacgIRcyEn.RKbp3GCvRrF-ULi5iBGONAu.OhmzAkCmkjU-ULi5iBGONAu.oIxEDq59GUL-KOwVEU2EA7Z.SM9d5ybWcr0-KOwVEU2EA7Z.H5MiomGgbbi-KOwVEU2EA7Z.OUPWAOZojRb-skBQWWv6gl1.WalQ4zu7RLz-skBQWWv6gl1.bmT820wlIV5-skBQWWv6gl1.RKbp3GCvRrF-nIcdxDJCdHx.OhmzAkCmkjU-nIcdxDJCdHx.oIxEDq59GUL-HmuIHZ6mB5C.SM9d5ybWcr0-HmuIHZ6mB5C.H5MiomGgbbi-HmuIHZ6mB5C.OUPWAOZojRb-V69eTQCM24s.WalQ4zu7RLz-V69eTQCM24s.bmT820wlIV5-V69eTQCM24s.RKbp3GCvRrF-BV7XJhKZIp5.OhmzAkCmkjU-BV7XJhKZIp5.oIxEDq59GUL-HrHAQ04IZfY.SM9d5ybWcr0-HrHAQ04IZfY.H5MiomGgbbi-HrHAQ04IZfY.OUPWAOZojRb-LKb1YnJQsWx.WalQ4zu7RLz-LKb1YnJQsWx.bmT820wlIV5-LKb1YnJQsWx.RKbp3GCvRrF"
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Nat_HIV_TB",
+    "value": 0
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Nat_Pregnant_and_Lactating",
+    "value": "EQK28HH3I2m.r01f3QfmLJS+EQK28HH3I2m.vrSTfWaEZfP+EQK28HH3I2m.I28asEo67Mt+PbLpJq9pGZC.r01f3QfmLJS+PbLpJq9pGZC.vrSTfWaEZfP+PbLpJq9pGZC.I28asEo67Mt+nhk5V6yA2lZ.r01f3QfmLJS+nhk5V6yA2lZ.vrSTfWaEZfP+nhk5V6yA2lZ.I28asEo67Mt-uLacgIRcyEn.r01f3QfmLJS-uLacgIRcyEn.vrSTfWaEZfP-uLacgIRcyEn.I28asEo67Mt-skBQWWv6gl1.r01f3QfmLJS-skBQWWv6gl1.vrSTfWaEZfP-skBQWWv6gl1.I28asEo67Mt-V69eTQCM24s.r01f3QfmLJS-V69eTQCM24s.vrSTfWaEZfP-V69eTQCM24s.I28asEo67Mt-LKb1YnJQsWx.r01f3QfmLJS-LKb1YnJQsWx.vrSTfWaEZfP-LKb1YnJQsWx.I28asEo67Mt"
+  },
+  {
+    "key": "TSFP_TS_number_at_the_end_of_reporting_period_Nat_total_crude",
+    "value": 0
   }
 ]
