@@ -312,7 +312,7 @@ const SchedulerService: ServiceSchema<SchedulerSettings> = {
 					const [{ id }] = results;
 					const finalPayload = {
 						user: id,
-						schema: 96,
+						schema: 143,
 						data: payload,
 						timelevel: 3,
 						location: Number(facility["iRHIS ID"]),
